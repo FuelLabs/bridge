@@ -1,0 +1,28 @@
+[[package]]
+name = 'core'
+source = 'path+from-root-D230B9147C951106'
+dependencies = []
+
+[[package]]
+name = 'fungible_token_abi'
+source = 'path+from-root-D230B9147C951106'
+dependencies = ['std']
+
+[[package]]
+name = 'gateway_abi'
+source = 'path+from-root-D230B9147C951106'
+dependencies = ['std']
+
+[[package]]
+name = 'std'
+source = 'path+from-root-D230B9147C951106'
+dependencies = ['core']
+
+[[package]]
+name = 'token_gate'
+source = 'root'
+dependencies = [
+    'fungible_token_abi',
+    'gateway_abi',
+    'std',
+]
